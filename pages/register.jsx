@@ -1,4 +1,4 @@
-// pages/register.jsx
+// pages/register.jsx (Cadastro)
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -62,84 +62,79 @@ export default function Register() {
 
       <style jsx>{`
         .page-container {
-  background-color: #111;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: #0d47a1;
-}
+          background-color: #111;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          color: #0d47a1;
+        }
 
-.page-container {
-    background-color: #111;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #0d47a1;
-  }
+        .container {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2rem 1rem;
+        }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    flex-grow: 1;
-  }
+        .form-control {
+          background: #1a1a1a;
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+          width: 100%;
+          max-width: 400px;
+        }
 
-  .form-control {
-    background: #1a1a1a;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
+        input {
+          width: 100%;
+          padding: 0.75rem;
+          margin-bottom: 1rem;
+          border: 1px solid #333;
+          border-radius: 4px;
+          background-color: #2a2a2a;
+          color: #fff;
+          box-sizing: border-box;
+        }
 
-  input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background-color: #2a2a2a;
-    color: #fff;
-    font-size: 1rem;
-  }
+        input:focus {
+          outline: none;
+          border-color: #4caf50;
+          box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
 
-  input::placeholder {
-    color: #bbb;
-  }
+        input::placeholder {
+          color: #bbb;
+        }
 
-  .text-center {
-    text-align: center;
-    color: #0d47a1;
-  }
+        .text-center {
+          text-align: center;
+          color: #0d47a1;
+        }
 
-  .btn-link {
-    color: #0d47a1;
-    text-decoration: none;
-  }
+        .btn-link {
+          color: #0d47a1;
+          text-decoration: none;
+        }
 
-  .btn-link:hover {
-    text-decoration: underline;
-  }
+        .btn-link:hover {
+          text-decoration: underline;
+        }
 
-  .btn-success {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1rem;
-  }
+        .btn-success {
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          padding: 0.75rem 1.5rem;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom: 1rem;
+        }
 
-  .btn-success:hover {
-    background-color: #45a049;
-  }
+        .btn-success:hover {
+          background-color: #45a049;
+        }
       `}</style>
     </div>
   );
