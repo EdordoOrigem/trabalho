@@ -25,6 +25,7 @@ export default function AdminContent({ user }) {
 
     return () => unsubscribe();
   }, [user.uid]);
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -47,6 +48,7 @@ export default function AdminContent({ user }) {
 
     setTarefaInput('');
   }
+
   async function handleDelete(id) {
     await deleteDoc(doc(db, "tarefas", id));
   }
@@ -70,7 +72,7 @@ export default function AdminContent({ user }) {
         </button>
       </form>
 
-          <div className="mt-4">
+      <div className="mt-4">
         {tarefas.map((item) => (
           <div key={item.id} className="form-control mb-3">
             <p>{item.tarefa}</p>
