@@ -62,21 +62,21 @@ export default function Register() {
 
       <style jsx>{`
         .page-container {
-          background-color: #111; /* FUNDO PRETO */
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          color: #0d47a1; /* Azul escuro */
-        }
+  background-color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #0d47a1;
+}
 
-        .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex: 1;
-        }
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
 
         .form-control {
           background: #1a1a1a; /* caixa do formulário também escura */
