@@ -31,7 +31,7 @@ export default function Register() {
   }
 
   return (
-    <div>
+    <div className="page-container">
       <Header />
       <div className="container">
         <form onSubmit={handleRegister} className="form-control">
@@ -59,6 +59,70 @@ export default function Register() {
         </form>
       </div>
       <Footer />
+
+      <style jsx>{`
+        .page-container {
+          background-color: #ffffff;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: #0d47a1; /* Azul escuro */
+        }
+
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+        }
+
+        .form-control {
+          background: #fff;
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 400px;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.75rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        .text-center {
+          text-align: center;
+          color: #0d47a1;
+        }
+
+        .btn-link {
+          color: #0d47a1;
+          text-decoration: none;
+        }
+
+        .btn-link:hover {
+          text-decoration: underline;
+        }
+
+        .btn-success {
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          padding: 0.75rem 1.5rem;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+        }
+
+        .btn-success:hover {
+          background-color: #45a049;
+        }
+      `}</style>
     </div>
   );
 }
