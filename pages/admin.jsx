@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import { auth } from "../lib/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import AdminContent from "../components/AdminContent";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Admin() {
   const [user, setUser] = useState(null);
