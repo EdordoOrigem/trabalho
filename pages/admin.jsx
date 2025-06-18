@@ -119,55 +119,85 @@ export default function Admin() {
           color: #fff;
         }
 
-        :global(.admin-content input) {
-          background-color: #2a2a2a;
-          border: 1px solid #333;
-          color: #fff;
-          padding: 0.5rem;
-          border-radius: 4px;
+        /* Estilizar todas as caixas/containers dentro do admin */
+        :global(.admin-content > *) {
+          background-color: #1a1a1a !important;
+          border-radius: 8px;
+          padding: 1.5rem;
+          margin-bottom: 1rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
         }
 
-        :global(.admin-content input::placeholder) {
-          color: #bbb;
+        /* Estilizar inputs globalmente */
+        :global(input) {
+          background-color: #2a2a2a !important;
+          border: 1px solid #333 !important;
+          color: #fff !important;
+          padding: 0.5rem !important;
+          border-radius: 4px !important;
+          box-sizing: border-box !important;
         }
 
-        :global(.admin-content input:focus) {
-          outline: none;
-          border-color: #0d47a1;
-          box-shadow: 0 0 5px rgba(13, 71, 161, 0.3);
+        :global(input::placeholder) {
+          color: #bbb !important;
         }
 
-        :global(.admin-content button) {
-          background-color: #0d47a1;
-          color: white;
-          border: none;
-          padding: 0.5rem 1rem;
-          border-radius: 4px;
-          cursor: pointer;
-          margin: 0.25rem;
+        :global(input:focus) {
+          outline: none !important;
+          border-color: #0d47a1 !important;
+          box-shadow: 0 0 5px rgba(13, 71, 161, 0.3) !important;
         }
 
-        :global(.admin-content button:hover) {
-          background-color: #0a3a8a;
+        /* Estilizar botões globalmente */
+        :global(button) {
+          background-color: #0d47a1 !important;
+          color: white !important;
+          border: none !important;
+          padding: 0.5rem 1rem !important;
+          border-radius: 4px !important;
+          cursor: pointer !important;
+          margin: 0.25rem !important;
         }
 
-        :global(.admin-content textarea) {
-          background-color: #2a2a2a;
-          border: 1px solid #333;
-          color: #fff;
-          padding: 0.5rem;
-          border-radius: 4px;
-          resize: vertical;
+        :global(button:hover) {
+          background-color: #0a3a8a !important;
         }
 
-        :global(.admin-content textarea::placeholder) {
-          color: #bbb;
+        /* Estilizar textarea globalmente */
+        :global(textarea) {
+          background-color: #2a2a2a !important;
+          border: 1px solid #333 !important;
+          color: #fff !important;
+          padding: 0.5rem !important;
+          border-radius: 4px !important;
+          resize: vertical !important;
+          box-sizing: border-box !important;
+          width: 100% !important;
         }
 
-        :global(.admin-content textarea:focus) {
-          outline: none;
-          border-color: #0d47a1;
-          box-shadow: 0 0 5px rgba(13, 71, 161, 0.3);
+        :global(textarea::placeholder) {
+          color: #bbb !important;
+        }
+
+        :global(textarea:focus) {
+          outline: none !important;
+          border-color: #0d47a1 !important;
+          box-shadow: 0 0 5px rgba(13, 71, 161, 0.3) !important;
+        }
+
+        /* Estilizar labels e textos */
+        :global(label) {
+          color: #fff !important;
+          margin-bottom: 0.5rem !important;
+          display: block !important;
+        }
+
+        :global(p) {
+          color: #fff !important;
+        }
+
+        :global(h1), :global(h2), :global(h3), :global(h4), :global(h5), :global(h6) {
+          color: #0d47a1 !important;
         }
       `}</style>
     </div>
