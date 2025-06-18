@@ -62,7 +62,7 @@ export default function Register() {
 
       <style jsx>{`
         .page-container {
-          background-color: #ffffff;
+          background-color: #111; /* FUNDO PRETO */
           min-height: 100vh;
           display: flex;
           flex-direction: column;
@@ -79,10 +79,10 @@ export default function Register() {
         }
 
         .form-control {
-          background: #fff;
+          background: #1a1a1a; /* caixa do formulário também escura */
           padding: 2rem;
           border-radius: 8px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
           width: 100%;
           max-width: 400px;
         }
@@ -91,8 +91,14 @@ export default function Register() {
           width: 100%;
           padding: 0.75rem;
           margin-bottom: 1rem;
-          border: 1px solid #ccc;
+          border: 1px solid #333;
           border-radius: 4px;
+          background-color: #2a2a2a;
+          color: #fff;
+        }
+
+        input::placeholder {
+          color: #bbb;
         }
 
         .text-center {
